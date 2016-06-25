@@ -1,0 +1,20 @@
+<div class="container"
+<ul>
+  <li class="code">Move Right</li>
+  <li class="code">Move Left</li>
+  <li class="code">Move Forward</li>
+  <li class="code">Move Backwards</li>
+</ul>
+
+<form class="" action="/" method="post">
+  <textarea class="compile" name="code" rows="8" cols="40"></textarea>
+  <button type="submit">Execute Code</button>
+</form>
+
+<script>
+  $(document).ready(function() {
+    $('.code').on('click', function() {
+      $('.compile').append($(this).html() + ', ');
+    })
+  })
+</script>
